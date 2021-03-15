@@ -1,0 +1,11 @@
+aesfast : aesfast.o aesfastutil.o
+	g++ -o aesfast aesfast.o aesfastutil.o -std=c++11 -lgmp -lgmpxx -lssl -lcrypto
+
+aesfast.o : aesfast.cpp aesfastutil.h
+	g++ -c -g aesfast.cpp -std=c++11 -lgmp -lgmpxx -lssl -lcrypto
+
+aesfastutil.o : aesfastutil.cpp
+	g++ -c -g aesfastutil.cpp -std=c++11 -lgmp -lgmpxx -lssl -lcrypto
+
+clean :
+	rm aesfast.o aesfastutil.o
