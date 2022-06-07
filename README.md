@@ -1,6 +1,6 @@
-# cryptography_experiment_buaacst
-BUAA_CST Cryptography Experiment (C++)
+# basic cryptography implementation
 
-C++ 实现版本，渣代码
+homework for Cryptography in BUAA_CST
 
-正常一点的C版本的代码已经在安排了
+basic C++ implementation for various cryptography algorithms
+
